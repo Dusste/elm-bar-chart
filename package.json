@@ -1,0 +1,23 @@
+{
+  "name": "elm-bar-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"elm make examples/Demo.elm --output=dist/elm.js\" \"npx tailwindcss -i tailwind.css -o dist/tailwind.build.css --watch\"",
+    "build": "elm make examples/Demo.elm --output=dist/elm.js && npx tailwindcss -i tailwind.css -o dist/tailwind.build.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elm": "^0.19.1-5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "elm-format": "^0.8.7",
+    "elm-tailwind-modules": "^0.5.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.10",
+    "concurrently": "^9.1.0"
+  }
+}
