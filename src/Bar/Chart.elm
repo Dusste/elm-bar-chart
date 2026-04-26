@@ -160,10 +160,11 @@ view toSelf status model =
                     else
                         (availableSpace / availableBars) - barSpacing
             in
-            -- if w > 40 then
-            --     30
-            -- else
-            w
+            if barCount <= 3 then
+                30
+
+            else
+                w
 
         chartWidth : Float
         chartWidth =
